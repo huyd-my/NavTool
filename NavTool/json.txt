@@ -1,0 +1,164 @@
+{
+"code": "root",
+"id": 1,
+"level": 0,
+"name": "根节点（勿删除）",
+"parentId": 0,
+"sort": 0,
+"tags": [
+{
+"tags": [
+{
+"code": "test",
+"id": 11,
+"level": 2,
+"name": "发卡",
+"groupName": "二级标签",
+"parentId": 2,
+"sort": 1,
+"tags": [
+{
+"code": "test",
+"id": 111,
+"level": 2,
+"name": "儿童类别",
+"groupName": "三级标签",
+"parentId": 11,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 112,
+"level": 2,
+"name": "流行元素",
+"groupName": "三级标签",
+"parentId": 11,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 113,
+"level": 2,
+"name": "2019新款",
+"groupName": "三级标签",
+"parentId": 11,
+"sort": 1,
+"tags": {}
+}
+]
+},
+{
+"code": "test",
+"id": 12,
+"level": 2,
+"name": "耳环",
+"groupName": "二级标签",
+"parentId": 2,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 13,
+"level": 2,
+"name": "手链[文本很长]",
+"groupName": "二级标签",
+"parentId": 2,
+"sort": 1,
+"tags": {}
+}
+],
+"code": "shipin",
+"id": 2,
+"level": 1,
+"groupName": "一级标签",
+"name": "饰品",
+"parentId": 1,
+"sort": 1
+},
+{
+"tags": [
+{
+"code": "test",
+"id": 21,
+"level": 2,
+"groupName": "二级标签",
+"name": "西装",
+"parentId": 3,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 22,
+"level": 2,
+"name": "运动休闲鞋",
+"groupName": "二级标签",
+"parentId": 3,
+"sort": 1,
+"tags": {}
+}
+],
+"code": "man",
+"id": 3,
+"level": 1,
+"groupName": "一级标签",
+"name": "男装",
+"parentId": 1,
+"sort": 2
+},
+{
+"tags": [
+{
+"code": "test",
+"id": 31,
+"level": 2,
+"name": "保暖裤",
+"groupName": "二级标签",
+"parentId": 4,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 32,
+"level": 2,
+"name": "羽绒服",
+"groupName": "二级标签",
+"parentId": 4,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 33,
+"level": 2,
+"name": "鞋子",
+"groupName": "二级标签",
+"parentId": 4,
+"sort": 1,
+"tags": {}
+},
+{
+"code": "test",
+"id": 34,
+"level": 2,
+"name": "大衣",
+"groupName": "二级标签",
+"parentId": 4,
+"sort": 1,
+"tags": {}
+}
+],
+"code": "woman",
+"id": 4,
+"level": 1,
+"groupName": "一级标签",
+"name": "女装",
+"parentId": 1,
+"sort": 3
+}
+]
+}
