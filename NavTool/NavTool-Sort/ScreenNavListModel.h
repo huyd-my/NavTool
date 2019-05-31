@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ScreenNavDataModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ScreenNavListModel : NSObject
-
+@property(nonatomic, strong) NSMutableArray<ScreenNavDataModel *> *list;
+- (instancetype)handleItemModelArrayWithItemSelect:(NSInteger)selectIndex;
 @end
 
 NS_ASSUME_NONNULL_END

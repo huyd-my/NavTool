@@ -7,10 +7,8 @@
 //
 
 #import "AllProductScreenNavBar.h"
-#import "RDMacro.h"
-#import "RDControlFactory.h"
+#import "Macro.h"
 #import "ScreenNavBarItem.h"
-#import <RdAppSkinColor.h>
 #import <Masonry.h>
 
 @interface AllProductScreenNavBar()
@@ -47,7 +45,7 @@
 - (void)createSubViews {
     for (ScreenNavDataModel *dataModel in _dataArray) {
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(userSelectIndexItem:)];
-        ScreenNavBarItem *item = [[ScreenNavBarItem alloc] initWithTitle:dataModel.title normalIcon:dataModel.normalImage selectSingleIcon:dataModel.selectSingleImage selectDoubleIcon:dataModel.selectDoubleImage];
+        ScreenNavBarItem *item = [[ScreenNavBarItem alloc] initWithItemModel:dataModel];
         [item addGestureRecognizer:tap];
         [self addSubview:item];
         [self.itemArray addObject:item];
@@ -76,7 +74,9 @@
                 selectIndex = i;
             }
         }
+        
         ScreenNavBarItem *item = self.itemArray[selectIndex];
+//        ScreenNavBarItem *item = (ScreenNavBarItem *)tap.view;
         self.itemSelect(item,selectIndex);
     }
 }

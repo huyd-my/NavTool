@@ -8,6 +8,27 @@
 
 #import "ScreenNavListModel.h"
 
+#define ScreenItemIndex 3
+
 @implementation ScreenNavListModel
+- (instancetype)handleItemModelArrayWithItemSelect:(NSInteger)selectIndex {
+    ScreenNavListModel *listModel = self;
+    for (int i = 0 ; i < self.list.count; i ++) {
+        ScreenNavDataModel *model = listModel.list[i];
+        if (i == selectIndex) {
+            if (model.type == ItemSelelctTypeNone || model.type == ItemSelelctTypeDoubleType) {
+                model.type = ItemSelelctTypeSingleType;
+            } else if (model.type == ItemSelelctTypeSingleType) {
+                model.type = ItemSelelctTypeDoubleType;
+            }
+        } else if (i == ScreenItemIndex) {
+            
+        } else {
+            model.type = ItemSelelctTypeNone;
+        }
+        listModel.list[i] = model;
+    }
+    return listModel;
+}
 
 @end

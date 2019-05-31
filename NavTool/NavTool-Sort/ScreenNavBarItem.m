@@ -7,9 +7,7 @@
 //
 
 #import "ScreenNavBarItem.h"
-#import "RDControlFactory.h"
 #import "UIResponder+Router.h"
-#import <RdAppSkinColor.h>
 #import <Masonry.h>
 
 @interface ScreenNavBarItem()
@@ -18,6 +16,7 @@
     NSString *_iconN;
     NSString *_iconS;
     NSString *_iconD;
+    NSInteger _itemCode;
     ItemSelelctType _type;
 }
 @property(nonatomic, strong) UILabel *titlelabel;
@@ -26,13 +25,33 @@
 
 @implementation ScreenNavBarItem
 
-- (instancetype)initWithTitle:(NSString *)title normalIcon:(NSString *)normalIcon selectSingleIcon:(NSString *)singleIcon selectDoubleIcon:(NSString *)doubleIcon {
+- (instancetype)initWithItemModel:(ScreenNavDataModel *)model {
+    self = [super init];
+    if (self) {
+        _title = model.title;
+        _iconN = model.normalImage;
+        _iconS = model.selectSingleImage;
+        _iconD = model.selectDoubleImage;
+        _itemCode = model.itemCode;
+        self.backgroundColor = [UIColor whiteColor];
+        [self titlelabel];
+        [self iconIMG];
+    }
+    return self;
+}
+
+- (instancetype)initWithTitle:(NSString *)title
+                   normalIcon:(NSString *)normalIcon
+             selectSingleIcon:(NSString *)singleIcon
+             selectDoubleIcon:(NSString *)doubleIcon
+                     itemCode:(NSInteger)itemCode {
     self = [super init];
     if (self) {
         _title = title;
         _iconN = normalIcon;
         _iconS = singleIcon;
         _iconD = doubleIcon;
+        _itemCode = itemCode;
         self.backgroundColor = [UIColor whiteColor];
         [self titlelabel];
         [self iconIMG];
@@ -43,40 +62,28 @@
 - (void)updateWithType:(ItemSelelctType)type {
     _type = type;
     if (type == ItemSelelctTypeNone) {
-        self.titlelabel.textColor = [RdAppSkinColor sharedInstance].emphasisSubTextColor;
+        self.titlelabel.textColor = [UIColor blackColor];
         self.iconIMG.image = [UIImage imageNamed:_iconN];
     } else if (type == ItemSelelctTypeSingleType) {
-        self.titlelabel.textColor = [RdAppSkinColor sharedInstance].mainColor;
+        self.titlelabel.textColor = [UIColor orangeColor];
         self.iconIMG.image = [UIImage imageNamed:_iconS];
     } else if (type == ItemSelelctTypeDoubleType) {
-        self.titlelabel.textColor = [RdAppSkinColor sharedInstance].mainColor;
+        self.titlelabel.textColor = [UIColor orangeColor];
         self.iconIMG.image = [UIImage imageNamed:_iconD];
     }
 }
 
-- (ProductSortType)currentItemState {
-    if ([_title isEqualToString:@"综合"]) {
-        return ProductSortTypeComprehensive;
-    }
-    if ([_title isEqualToString:@"销量"]) {
-        return ProductSortTypeSalesDesc;
-    }
-    if ([_title isEqualToString:@"价格"]) {
-        if (_currentType == ItemSelelctTypeSingleType) {
-            return ProductSortTypePriceAsc;
-        } else if (_currentType == ItemSelelctTypeDoubleType) {
-            return ProductSortTypePriceDesc;
-        }
-    }
-    if ([_title isEqualToString:@"筛选"]) {
-        return ProductSortTypeScreening;
-    }
-    return 0;
+- (NSInteger)currentItemCode {
+    return _itemCode;
 }
+
 
 - (UILabel *)titlelabel {
     if (!_titlelabel) {
-        _titlelabel = [UILabel getLabelWithFontSize:15 textColor:[RdAppSkinColor sharedInstance].emphasisSubTextColor superView:self];
+        _titlelabel = [[UILabel alloc] init];
+        _titlelabel.font = [UIFont systemFontOfSize:15];
+        _titlelabel.textColor = [UIColor blackColor];
+        [self addSubview:_titlelabel];
         _titlelabel.textAlignment = NSTextAlignmentCenter;
         _titlelabel.text = _title;
         CGFloat offsetCenter = _iconN.length <= 0 ? 0 : -7;

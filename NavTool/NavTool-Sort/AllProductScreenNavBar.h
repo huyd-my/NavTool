@@ -6,14 +6,11 @@
 //  Copyright © 2018年 Mr_zhaohy. All rights reserved.
 //
 
-//说明:
-//通过外部的model添加item设置item
-//通过修改model更改item的属性
-//item的具体事件分发判断在item里（需要重构）
 
 #import <UIKit/UIKit.h>
 #import "ScreenNavDataModel.h"
 #import "ScreenNavBarItem.h"
+
 
 typedef void(^itemSelect)(ScreenNavBarItem *item, NSInteger selectIndex);
 

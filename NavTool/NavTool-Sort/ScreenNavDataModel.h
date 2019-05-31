@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
+
+/**
+ item的样式
+
+ - ItemSelelctTypeNone: 未选中
+ - ItemSelelctTypeSingleType: 单击
+ - ItemSelelctTypeDoubleType: 双击
+ */
 typedef NS_ENUM(NSInteger,ItemSelelctType) {
-    ItemSelelctTypeNone = 0,         //未选中
-    ItemSelelctTypeSingleType = 1,        //单击
-    ItemSelelctTypeDoubleType = 2        //双击
+    ItemSelelctTypeNone = 0,
+    ItemSelelctTypeSingleType = 1,
+    ItemSelelctTypeDoubleType = 2        
 };
 
 @interface ScreenNavDataModel : NSObject
@@ -23,6 +31,8 @@ typedef NS_ENUM(NSInteger,ItemSelelctType) {
 @property(nonatomic, copy) NSString *selectSingleImage;
 
 @property(nonatomic, copy) NSString *selectDoubleImage;
+
+@property(nonatomic, assign) NSInteger itemCode;
 
 @property(nonatomic, assign) ItemSelelctType type;
 

@@ -9,13 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "ScreenNavDataModel.h"
 
-typedef NS_ENUM(NSInteger,ProductSortType) {
-    ProductSortTypeComprehensive = 0,     //综合
-    ProductSortTypeSalesDesc = 1,        //销量降序
-    ProductSortTypePriceAsc = 2,         //价格升序
-    ProductSortTypePriceDesc = 3,       //价格降序
-    ProductSortTypeScreening = 4        //筛选
-};
 
 #define ACTION_ShowRightScreeningView @"showRightScreeningView"
 
@@ -23,21 +16,39 @@ typedef NS_ENUM(NSInteger,ProductSortType) {
 
 @property(nonatomic, assign) ItemSelelctType currentType;
 
+@property(nonatomic, assign) NSInteger currentItemCode;
+
 /**
- 创建商品选择导航条
+ 创建商品选择导航条          === >   改用model创建
 
  @param title 标题
  @param normalIcon 未选中图片
  @param singleIcon 选中单次图片
  @param doubleIcon 选中双次图片
+ @param itemCode item的标识
  @return shuli
  */
-- (instancetype)initWithTitle:(NSString *)title
-                   normalIcon:(NSString *)normalIcon
-             selectSingleIcon:(NSString *)singleIcon
-             selectDoubleIcon:(NSString *)doubleIcon;
+//- (instancetype)initWithTitle:(NSString *)title
+//                   normalIcon:(NSString *)normalIcon
+//             selectSingleIcon:(NSString *)singleIcon
+//             selectDoubleIcon:(NSString *)doubleIcon
+//                     itemCode:(NSInteger)itemCode;
 
+
+/**
+ 初始化方法
+
+ @param model 数据源
+ @return 实例
+ */
+- (instancetype)initWithItemModel:(ScreenNavDataModel *)model;
+
+
+/**
+ 更新item的样式
+
+ @param type 样式的枚举
+ */
 - (void)updateWithType:(ItemSelelctType)type;
 
-- (ProductSortType)currentItemState;
 @end

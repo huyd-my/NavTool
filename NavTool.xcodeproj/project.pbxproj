@@ -15,6 +15,21 @@
 		642D895921ED8A2E00739B39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D895821ED8A2E00739B39 /* main.m */; };
 		642D896321ED8A2E00739B39 /* NavToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D896221ED8A2E00739B39 /* NavToolTests.m */; };
 		642D896E21ED8A2E00739B39 /* NavToolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D896D21ED8A2E00739B39 /* NavToolUITests.m */; };
+		642D898221ED8A3600739B39 /* ScreenNavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D897C21ED8A3600739B39 /* ScreenNavBarItem.m */; };
+		642D898321ED8A3600739B39 /* ScreenNavDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D898021ED8A3600739B39 /* ScreenNavDataModel.m */; };
+		642D898421ED8A3600739B39 /* AllProductScreenNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D898121ED8A3600739B39 /* AllProductScreenNavBar.m */; };
+		642D898821ED8B8A00739B39 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 642D898621ED8B8A00739B39 /* UIResponder+Router.m */; };
+		6476C6AB21EF0A6B0016BA54 /* ScreenNavListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6AA21EF0A6B0016BA54 /* ScreenNavListModel.m */; };
+		6476C6BA21EF10720016BA54 /* ScreeningListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6AF21EF10720016BA54 /* ScreeningListModel.m */; };
+		6476C6BB21EF10720016BA54 /* TagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6B121EF10720016BA54 /* TagButton.m */; };
+		6476C6BC21EF10720016BA54 /* HeadCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6B421EF10720016BA54 /* HeadCollectionReusableView.m */; };
+		6476C6BD21EF10720016BA54 /* SCCollectionButtonsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6B521EF10720016BA54 /* SCCollectionButtonsView.m */; };
+		6476C6BE21EF10720016BA54 /* ButtonsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6B721EF10720016BA54 /* ButtonsCollectionViewCell.m */; };
+		6476C6BF21EF10720016BA54 /* ScreeningProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6B921EF10720016BA54 /* ScreeningProductView.m */; };
+		6476C6C121EF108A0016BA54 /* json.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6476C6C021EF108A0016BA54 /* json.txt */; };
+		6476C6C821EF16B10016BA54 /* TreeTagListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6C321EF16B10016BA54 /* TreeTagListModel.m */; };
+		6476C6C921EF16B10016BA54 /* HandleTreeTagsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6476C6C621EF16B10016BA54 /* HandleTreeTagsModel.m */; };
+		9CE2EFF45669B94E3B2907FF /* libPods-NavTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 313296600689880E3717CB24 /* libPods-NavTool.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		313296600689880E3717CB24 /* libPods-NavTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NavTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		642D894621ED8A2C00739B39 /* NavTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		642D894921ED8A2C00739B39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		642D894A21ED8A2C00739B39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +67,36 @@
 		642D896921ED8A2E00739B39 /* NavToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		642D896D21ED8A2E00739B39 /* NavToolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavToolUITests.m; sourceTree = "<group>"; };
 		642D896F21ED8A2E00739B39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		642D897C21ED8A3600739B39 /* ScreenNavBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNavBarItem.m; sourceTree = "<group>"; };
+		642D897D21ED8A3600739B39 /* AllProductScreenNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllProductScreenNavBar.h; sourceTree = "<group>"; };
+		642D897E21ED8A3600739B39 /* ScreenNavDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenNavDataModel.h; sourceTree = "<group>"; };
+		642D897F21ED8A3600739B39 /* ScreenNavBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenNavBarItem.h; sourceTree = "<group>"; };
+		642D898021ED8A3600739B39 /* ScreenNavDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenNavDataModel.m; sourceTree = "<group>"; };
+		642D898121ED8A3600739B39 /* AllProductScreenNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllProductScreenNavBar.m; sourceTree = "<group>"; };
+		642D898521ED8A8B00739B39 /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		642D898621ED8B8A00739B39 /* UIResponder+Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		642D898721ED8B8A00739B39 /* UIResponder+Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		6476C6A921EF0A6B0016BA54 /* ScreenNavListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenNavListModel.h; sourceTree = "<group>"; };
+		6476C6AA21EF0A6B0016BA54 /* ScreenNavListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenNavListModel.m; sourceTree = "<group>"; };
+		6476C6AD21EF10720016BA54 /* ScreeningListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeningListModel.h; sourceTree = "<group>"; };
+		6476C6AE21EF10720016BA54 /* ScreeningProductView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreeningProductView.h; sourceTree = "<group>"; };
+		6476C6AF21EF10720016BA54 /* ScreeningListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningListModel.m; sourceTree = "<group>"; };
+		6476C6B121EF10720016BA54 /* TagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagButton.m; sourceTree = "<group>"; };
+		6476C6B221EF10720016BA54 /* SCCollectionButtonsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCollectionButtonsView.h; sourceTree = "<group>"; };
+		6476C6B321EF10720016BA54 /* ButtonsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsCollectionViewCell.h; sourceTree = "<group>"; };
+		6476C6B421EF10720016BA54 /* HeadCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadCollectionReusableView.m; sourceTree = "<group>"; };
+		6476C6B521EF10720016BA54 /* SCCollectionButtonsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCollectionButtonsView.m; sourceTree = "<group>"; };
+		6476C6B621EF10720016BA54 /* TagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagButton.h; sourceTree = "<group>"; };
+		6476C6B721EF10720016BA54 /* ButtonsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsCollectionViewCell.m; sourceTree = "<group>"; };
+		6476C6B821EF10720016BA54 /* HeadCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadCollectionReusableView.h; sourceTree = "<group>"; };
+		6476C6B921EF10720016BA54 /* ScreeningProductView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreeningProductView.m; sourceTree = "<group>"; };
+		6476C6C021EF108A0016BA54 /* json.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = json.txt; sourceTree = "<group>"; };
+		6476C6C321EF16B10016BA54 /* TreeTagListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTagListModel.m; sourceTree = "<group>"; };
+		6476C6C521EF16B10016BA54 /* HandleTreeTagsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandleTreeTagsModel.h; sourceTree = "<group>"; };
+		6476C6C621EF16B10016BA54 /* HandleTreeTagsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HandleTreeTagsModel.m; sourceTree = "<group>"; };
+		6476C6C721EF16B10016BA54 /* TreeTagListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTagListModel.h; sourceTree = "<group>"; };
+		9F97BE75D1761E0C3999D2DB /* Pods-NavTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavTool/Pods-NavTool.release.xcconfig"; sourceTree = "<group>"; };
+		C6B392E9535D34AECA28A46C /* Pods-NavTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavTool/Pods-NavTool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE2EFF45669B94E3B2907FF /* libPods-NavTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AC2ABD0D8285D126AF33333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6B392E9535D34AECA28A46C /* Pods-NavTool.debug.xcconfig */,
+				9F97BE75D1761E0C3999D2DB /* Pods-NavTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		642D893D21ED8A2C00739B39 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +141,8 @@
 				642D896121ED8A2E00739B39 /* NavToolTests */,
 				642D896C21ED8A2E00739B39 /* NavToolUITests */,
 				642D894721ED8A2C00739B39 /* Products */,
+				0AC2ABD0D8285D126AF33333 /* Pods */,
+				D3C66C93475E59BE8FFC94BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +159,22 @@
 		642D894821ED8A2C00739B39 /* NavTool */ = {
 			isa = PBXGroup;
 			children = (
+				6476C6C221EF16B10016BA54 /* Model */,
+				6476C6AC21EF10720016BA54 /* ScreenProduct */,
+				642D897B21ED8A3600739B39 /* NavTool-Sort */,
 				642D894921ED8A2C00739B39 /* AppDelegate.h */,
 				642D894A21ED8A2C00739B39 /* AppDelegate.m */,
 				642D894C21ED8A2C00739B39 /* ViewController.h */,
 				642D894D21ED8A2C00739B39 /* ViewController.m */,
+				642D898521ED8A8B00739B39 /* Macro.h */,
+				642D898721ED8B8A00739B39 /* UIResponder+Router.h */,
+				642D898621ED8B8A00739B39 /* UIResponder+Router.m */,
 				642D894F21ED8A2C00739B39 /* Main.storyboard */,
 				642D895221ED8A2E00739B39 /* Assets.xcassets */,
 				642D895421ED8A2E00739B39 /* LaunchScreen.storyboard */,
 				642D895721ED8A2E00739B39 /* Info.plist */,
 				642D895821ED8A2E00739B39 /* main.m */,
+				6476C6C021EF108A0016BA54 /* json.txt */,
 			);
 			path = NavTool;
 			sourceTree = "<group>";
@@ -132,6 +197,75 @@
 			path = NavToolUITests;
 			sourceTree = "<group>";
 		};
+		642D897B21ED8A3600739B39 /* NavTool-Sort */ = {
+			isa = PBXGroup;
+			children = (
+				642D897E21ED8A3600739B39 /* ScreenNavDataModel.h */,
+				642D898021ED8A3600739B39 /* ScreenNavDataModel.m */,
+				642D897F21ED8A3600739B39 /* ScreenNavBarItem.h */,
+				642D897C21ED8A3600739B39 /* ScreenNavBarItem.m */,
+				642D897D21ED8A3600739B39 /* AllProductScreenNavBar.h */,
+				642D898121ED8A3600739B39 /* AllProductScreenNavBar.m */,
+				6476C6A921EF0A6B0016BA54 /* ScreenNavListModel.h */,
+				6476C6AA21EF0A6B0016BA54 /* ScreenNavListModel.m */,
+			);
+			path = "NavTool-Sort";
+			sourceTree = "<group>";
+		};
+		6476C6AC21EF10720016BA54 /* ScreenProduct */ = {
+			isa = PBXGroup;
+			children = (
+				6476C6AD21EF10720016BA54 /* ScreeningListModel.h */,
+				6476C6AE21EF10720016BA54 /* ScreeningProductView.h */,
+				6476C6AF21EF10720016BA54 /* ScreeningListModel.m */,
+				6476C6B021EF10720016BA54 /* TagsCollection */,
+				6476C6B921EF10720016BA54 /* ScreeningProductView.m */,
+			);
+			path = ScreenProduct;
+			sourceTree = "<group>";
+		};
+		6476C6B021EF10720016BA54 /* TagsCollection */ = {
+			isa = PBXGroup;
+			children = (
+				6476C6B121EF10720016BA54 /* TagButton.m */,
+				6476C6B221EF10720016BA54 /* SCCollectionButtonsView.h */,
+				6476C6B321EF10720016BA54 /* ButtonsCollectionViewCell.h */,
+				6476C6B421EF10720016BA54 /* HeadCollectionReusableView.m */,
+				6476C6B521EF10720016BA54 /* SCCollectionButtonsView.m */,
+				6476C6B621EF10720016BA54 /* TagButton.h */,
+				6476C6B721EF10720016BA54 /* ButtonsCollectionViewCell.m */,
+				6476C6B821EF10720016BA54 /* HeadCollectionReusableView.h */,
+			);
+			path = TagsCollection;
+			sourceTree = "<group>";
+		};
+		6476C6C221EF16B10016BA54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6476C6C721EF16B10016BA54 /* TreeTagListModel.h */,
+				6476C6C321EF16B10016BA54 /* TreeTagListModel.m */,
+				6476C6C421EF16B10016BA54 /* HandleTagsModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6476C6C421EF16B10016BA54 /* HandleTagsModel */ = {
+			isa = PBXGroup;
+			children = (
+				6476C6C521EF16B10016BA54 /* HandleTreeTagsModel.h */,
+				6476C6C621EF16B10016BA54 /* HandleTreeTagsModel.m */,
+			);
+			path = HandleTagsModel;
+			sourceTree = "<group>";
+		};
+		D3C66C93475E59BE8FFC94BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				313296600689880E3717CB24 /* libPods-NavTool.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 642D897221ED8A2E00739B39 /* Build configuration list for PBXNativeTarget "NavTool" */;
 			buildPhases = (
+				076337A275F8246ECC22D8E4 /* [CP] Check Pods Manifest.lock */,
 				642D894221ED8A2C00739B39 /* Sources */,
 				642D894321ED8A2C00739B39 /* Frameworks */,
 				642D894421ED8A2C00739B39 /* Resources */,
+				93810086D1FFAD730D8BC20A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6476C6C121EF108A0016BA54 /* json.txt in Resources */,
 				642D895621ED8A2E00739B39 /* LaunchScreen.storyboard in Resources */,
 				642D895321ED8A2E00739B39 /* Assets.xcassets in Resources */,
 				642D895121ED8A2C00739B39 /* Main.storyboard in Resources */,
@@ -257,13 +394,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		076337A275F8246ECC22D8E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NavTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93810086D1FFAD730D8BC20A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NavTool/Pods-NavTool-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavTool/Pods-NavTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		642D894221ED8A2C00739B39 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6476C6C821EF16B10016BA54 /* TreeTagListModel.m in Sources */,
+				6476C6BD21EF10720016BA54 /* SCCollectionButtonsView.m in Sources */,
+				6476C6BB21EF10720016BA54 /* TagButton.m in Sources */,
+				642D898321ED8A3600739B39 /* ScreenNavDataModel.m in Sources */,
+				642D898421ED8A3600739B39 /* AllProductScreenNavBar.m in Sources */,
 				642D894E21ED8A2C00739B39 /* ViewController.m in Sources */,
 				642D895921ED8A2E00739B39 /* main.m in Sources */,
+				642D898821ED8B8A00739B39 /* UIResponder+Router.m in Sources */,
+				642D898221ED8A3600739B39 /* ScreenNavBarItem.m in Sources */,
+				6476C6BA21EF10720016BA54 /* ScreeningListModel.m in Sources */,
+				6476C6AB21EF0A6B0016BA54 /* ScreenNavListModel.m in Sources */,
+				6476C6BC21EF10720016BA54 /* HeadCollectionReusableView.m in Sources */,
+				6476C6C921EF16B10016BA54 /* HandleTreeTagsModel.m in Sources */,
+				6476C6BF21EF10720016BA54 /* ScreeningProductView.m in Sources */,
+				6476C6BE21EF10720016BA54 /* ButtonsCollectionViewCell.m in Sources */,
 				642D894B21ED8A2C00739B39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +630,7 @@
 		};
 		642D897321ED8A2E00739B39 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B392E9535D34AECA28A46C /* Pods-NavTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +648,7 @@
 		};
 		642D897421ED8A2E00739B39 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F97BE75D1761E0C3999D2DB /* Pods-NavTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
