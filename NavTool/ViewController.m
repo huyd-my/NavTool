@@ -49,8 +49,6 @@ typedef NS_ENUM(NSInteger,ProductSortType) {
     [self createData];
     [self createNavView];
     
-    NSString *we = @"";
-    [we substringToIndex:2];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -75,11 +73,11 @@ typedef NS_ENUM(NSInteger,ProductSortType) {
 - (void)createData {
     ScreenNavDataModel *model1 = [ScreenNavDataModel new];
     model1.title = @"综合";
-    model1.type = ItemSelelctTypeSingleType;
+    model1.type = ItemSelelctTypeNone;
     model1.itemCode = 10;
     ScreenNavDataModel *model2 = [ScreenNavDataModel new];
     model2.title = @"销量";
-    model2.type = ItemSelelctTypeNone;
+    model2.type = ItemSelelctTypeSingleType;
     model2.itemCode = 20;
     ScreenNavDataModel *model3 = [ScreenNavDataModel new];
     model3.title = @"价格";
@@ -124,6 +122,7 @@ typedef NS_ENUM(NSInteger,ProductSortType) {
 #pragma mark - create view
 - (void)createNavView {
     _bar = [[AllProductScreenNavBar alloc] initWithScreenNavData:_listModel.list];
+    [self eventWithSortType:ProductSortTypeSalesDesc];
     
     __weak typeof(self) weakSelf = self;
     _bar.itemSelect = ^(ScreenNavBarItem *item, NSInteger selectIndex) {

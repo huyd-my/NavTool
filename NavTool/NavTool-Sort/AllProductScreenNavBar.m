@@ -28,6 +28,7 @@
         _dataArray = dataArray;
         [self createSubViews];
         [self layoutItemSubviews];
+        [self updateWithScreenNavData:dataArray];
     }
     return self;
 }
